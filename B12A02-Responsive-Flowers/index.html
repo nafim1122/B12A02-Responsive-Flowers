@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom styles -->
+    <style>
+        .badge-spin {
+            animation: spin 3s linear infinite;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="assets/logo.png" alt="Logo" class="h-8">
+        </div>
+        <div class="hidden md:flex items-center space-x-6">
+            <a href="#" class="hover:text-orange-500">Home</a>
+            <a href="#" class="hover:text-orange-500">Plants</a>
+            <a href="#" class="hover:text-orange-500">About</a>
+            <a href="#" class="hover:text-orange-500">Contact</a>
+            <button class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <span class="ml-2">Cart</span>
+            </button>
+        </div>
+        <button class="md:hidden flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+            <span class="ml-2">Cart</span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-4 py-12 flex flex-col-reverse md:flex-row items-center">
+        <div class="md:w-1/2 mt-8 md:mt-0">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">ALWAYS FRESH<br>FLOWERS</h1>
+            <p class="text-gray-600 mb-6">We offer a wide variety of beautiful flowers and plants for any occasion. Our flowers are always fresh and hand-picked by our expert florists.</p>
+            <button class="bg-orange-500 text-white px-8 py-3 rounded hover:bg-orange-600">Shop Now</button>
+        </div>
+        <div class="md:w-1/2">
+            <img src="assets/hero-flower.png" alt="Hero Flowers" class="w-full">
+        </div>
+    </section>
+
+    <!-- Plants Section -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4">Our Plants</h2>
+            <p class="text-gray-600">Find your perfect plant from our carefully curated collection</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Plant Cards -->
+            <div class="bg-white p-4 rounded shadow">
+                <img src="assets/sample-flower-image.png" alt="Flower 1" class="w-full mb-4">
+                <h3 class="font-semibold">Lily Bouquet</h3>
+                <p class="text-gray-600">$29.99</p>
+                <button onclick="alert('Flower Added to Cart')" class="w-full mt-4 bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">Add to Cart</button>
+            </div>
+            <!-- Repeat similar cards for other plants -->
+        </div>
+    </section>
+
+    <!-- Plant Lover Section -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 relative">
+                <img src="assets/flower-store.png" alt="Flower Store" class="w-full">
+                <img src="assets/trusted-badge.png" alt="Trusted Badge" class="absolute -top-4 -right-4 w-24 h-24 badge-spin hidden md:block">
+            </div>
+            <div class="md:w-1/2 md:pl-12 mt-8 md:mt-0">
+                <h2 class="text-3xl font-bold mb-6">Flower & Plants Lover</h2>
+                <ul class="space-y-4">
+                    <li>✓ Fresh flowers from our gardens</li>
+                    <li>✓ Carefully selected varieties</li>
+                    <li>✓ Professional florist service</li>
+                    <li>✓ Same day delivery available</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Deals Section -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-center mb-12">Latest Deals</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="relative overflow-hidden rounded">
+                <img src="assets/deal-ana.png" alt="Deal 1" class="w-full">
+                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
+                    <h3 class="font-semibold">Ana Plant</h3>
+                    <p>25% OFF</p>
+                </div>
+            </div>
+            <div class="relative overflow-hidden rounded md:block hidden">
+                <img src="assets/deal-bloom.png" alt="Deal 2" class="w-full">
+                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
+                    <h3 class="font-semibold">Bloom Plant</h3>
+                    <p>20% OFF</p>
+                </div>
+            </div>
+            <div class="relative overflow-hidden rounded md:block hidden">
+                <img src="assets/deal-zabo.png" alt="Deal 3" class="w-full">
+                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
+                    <h3 class="font-semibold">Zabo Plant</h3>
+                    <p>15% OFF</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Section -->
+    <section class="relative py-24 bg-cover bg-center" style="background-image: url('assets/news-letter-bg.png')">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h2 class="text-3xl font-bold mb-8">Join the colorful Bunch</h2>
+            <div class="max-w-md mx-auto flex">
+                <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-2 rounded-l text-black">
+                <button class="bg-orange-500 text-white px-6 py-2 rounded-r hover:bg-orange-600">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="assets/logo.png" alt="Logo" class="h-8 mb-4">
+                    <p class="text-gray-600">Your trusted source for beautiful flowers and plants.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-orange-500">Home</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-orange-500">Plants</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-orange-500">About</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-orange-500">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>123 Garden Street</li>
+                        <li>New York, NY 10001</li>
+                        <li>info@flowermarket.com</li>
+                        <li>(555) 123-4567</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#"><img src="assets/icon-facebook.png" alt="Facebook" class="h-6"></a>
+                        <a href="#"><img src="assets/icon-twitter.png" alt="Twitter" class="h-6"></a>
+                        <a href="#"><img src="assets/icon-linkedin.png" alt="LinkedIn" class="h-6"></a>
+                        <a href="#"><img src="assets/icon-youtube.png" alt="YouTube" class="h-6"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
