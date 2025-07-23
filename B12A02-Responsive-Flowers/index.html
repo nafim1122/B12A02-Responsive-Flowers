@@ -132,54 +132,86 @@
 
     <!-- Plant Lover Section -->
     <section class="container mx-auto px-4 py-16">
-        <div class="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
-            <div class="md:w-1/2 relative">
-                <img src="assets/flower-store.png" alt="Flower Store" class="w-full rounded-lg">
-                <img src="assets/trusted-badge.png" alt="Trusted Seller Badge" class="absolute -top-8 -right-8 w-32 h-32 badge-spin hidden md:block z-10">
-            </div>
-            <div class="md:w-1/2 max-w-xl">
-                <h2 class="text-4xl font-bold mb-8">Flower & Plants<br>Lover</h2>
-                <ul class="space-y-6 text-gray-600">
-                    <li class="flex gap-2">
-                        <span class="text-[#FF6B00]">•</span>
-                        <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
-                    </li>
-                    <li class="flex gap-2">
-                        <span class="text-[#FF6B00]">•</span>
-                        <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
-                    </li>
-                    <li class="flex gap-2">
-                        <span class="text-[#FF6B00]">•</span>
-                        <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
-                    </li>
-                </ul>
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 relative h-[400px] md:h-auto">
+                    <img src="assets/flower-store.png" alt="Flower Store" class="w-full h-full object-cover">
+                    <img src="assets/trusted-badge.png" alt="Trusted Seller Badge" 
+                        class="absolute top-0 right-0 w-32 h-32 transform -translate-y-8 translate-x-8 badge-spin hidden md:block z-10">
+                </div>
+                <div class="md:w-1/2 p-8 md:p-16">
+                    <div class="max-w-xl">
+                        <h2 class="text-4xl font-bold mb-10">
+                            Flower & Plants<br>
+                            Lover
+                        </h2>
+                        <ul class="space-y-8">
+                            <li class="flex items-start gap-4">
+                                <span class="text-[#FF6B00] text-2xl mt-1 font-bold">•</span>
+                                <p class="text-gray-500 leading-relaxed">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span class="text-[#FF6B00] text-2xl mt-1 font-bold">•</span>
+                                <p class="text-gray-500 leading-relaxed">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span class="text-[#FF6B00] text-2xl mt-1 font-bold">•</span>
+                                <p class="text-gray-500 leading-relaxed">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Latest Deals Section -->
-    <section class="container mx-auto px-4 py-12">
-        <h2 class="text-3xl font-bold text-center mb-12">Latest Deals</h2>
+    <section class="container mx-auto px-4 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold mb-4">
+                <span class="text-[#FF6B00]">Latest</span> Deals
+            </h2>
+            <p class="text-gray-600 max-w-3xl mx-auto">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+        </div>
+        
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="relative overflow-hidden rounded">
-                <img src="assets/deal-ana.png" alt="Deal 1" class="w-full">
-                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
-                    <h3 class="font-semibold">Ana Plant</h3>
-                    <p>25% OFF</p>
+            <!-- Small Deals -->
+            <div class="space-y-6">
+                <div class="relative rounded-xl overflow-hidden group h-[240px]">
+                    <img src="assets/deal-bloom.png" alt="Bloom Plant" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-white">
+                        <div class="text-center">
+                            <p class="text-4xl font-bold tracking-wider mb-2">60% Off | Bloom Plant</p>
+                            <a href="#" class="inline-block mt-2 text-lg text-white hover:text-[#FF6B00] transition-colors">
+                                <span class="border-b-2 border-white pb-1 hover:border-[#FF6B00]">Shop Now</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative rounded-xl overflow-hidden group h-[240px]">
+                    <img src="assets/deal-ana.png" alt="Ana Plant" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-white">
+                        <div class="text-center">
+                            <p class="text-4xl font-bold tracking-wider mb-2">30% Off | Ana Plant</p>
+                            <a href="#" class="inline-block mt-2 text-lg text-white hover:text-[#FF6B00] transition-colors">
+                                <span class="border-b-2 border-white pb-1 hover:border-[#FF6B00]">Shop Now</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="relative overflow-hidden rounded md:block hidden">
-                <img src="assets/deal-bloom.png" alt="Deal 2" class="w-full">
-                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
-                    <h3 class="font-semibold">Bloom Plant</h3>
-                    <p>20% OFF</p>
-                </div>
-            </div>
-            <div class="relative overflow-hidden rounded md:block hidden">
-                <img src="assets/deal-zabo.png" alt="Deal 3" class="w-full">
-                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
-                    <h3 class="font-semibold">Zabo Plant</h3>
-                    <p>15% OFF</p>
+
+            <!-- Large Deal -->
+            <div class="md:col-span-2 relative rounded-xl overflow-hidden h-[500px]">
+                <img src="assets/deal-zabo.png" alt="Zabo Plant" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-white">
+                    <div class="text-center">
+                        <p class="text-6xl md:text-7xl font-bold tracking-wider mb-2">25% Off | Zabo Plant</p>
+                        <a href="#" class="inline-block mt-4 text-xl text-white hover:text-[#FF6B00] transition-colors">
+                            <span class="border-b-2 border-white pb-1 hover:border-[#FF6B00]">Shop Now</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
