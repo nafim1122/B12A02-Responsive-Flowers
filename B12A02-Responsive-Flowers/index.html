@@ -19,28 +19,75 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div class="flex items-center">
-            <img src="assets/logo.png" alt="Logo" class="h-8">
+    <nav class="bg-white border-b">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <img src="assets/logo.png" alt="Fauget" class="h-8">
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-600 hover:text-[#FF6B00] transition-colors">Home</a>
+                    <a href="#" class="text-gray-600 hover:text-[#FF6B00] transition-colors">Shop</a>
+                    <a href="#" class="text-gray-600 hover:text-[#FF6B00] transition-colors">About us</a>
+                    <div class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        <span>Cart ($56)</span>
+                    </div>
+                </div>
+
+                <!-- Mobile Cart -->
+                <div class="md:hidden flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                    <span>Cart ($56)</span>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="lg:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#" class="block px-3 py-2 text-gray-600 hover:text-[#FF6B00]">Home</a>
+                    <a href="#" class="block px-3 py-2 text-gray-600 hover:text-[#FF6B00]">About Us</a>
+                    <a href="#" class="block px-3 py-2 text-gray-600 hover:text-[#FF6B00]">Blog</a>
+                    <a href="#" class="block px-3 py-2 text-gray-600 hover:text-[#FF6B00]">FAQ</a>
+                    <a href="#" class="block px-3 py-2 text-gray-600 hover:text-[#FF6B00]">Contact Us</a>
+                    <a href="#" class="block px-3 py-2 text-gray-600 hover:text-[#FF6B00]">Features</a>
+                    <a href="#" class="block px-3 py-2 text-gray-600 hover:text-[#FF6B00]">Pricing</a>
+                    <a href="#" class="block px-3 py-2 text-gray-600 hover:text-[#FF6B00]">Privacy Policy</a>
+                    <a href="#" class="block px-3 py-2 text-gray-600 hover:text-[#FF6B00]">Terms of Service</a>
+                    <a href="#" class="block px-3 py-2 text-gray-600 hover:text-[#FF6B00]">Help Center</a>
+                </div>
+                <div class="px-5 py-3 border-t border-gray-200">
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:opacity-80">
+                            <img src="assets/icon-linkedin.png" alt="LinkedIn" class="w-6 h-6">
+                        </a>
+                        <a href="#" class="hover:opacity-80">
+                            <img src="assets/icon-twitter.png" alt="Twitter" class="w-6 h-6">
+                        </a>
+                        <a href="#" class="hover:opacity-80">
+                            <img src="assets/icon-facebook.png" alt="Facebook" class="w-6 h-6">
+                        </a>
+                        <a href="#" class="hover:opacity-80">
+                            <img src="assets/icon-youtube.png" alt="YouTube" class="w-6 h-6">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="hidden md:flex items-center space-x-6">
-            <a href="#" class="hover:text-orange-500">Home</a>
-            <a href="#" class="hover:text-orange-500">Plants</a>
-            <a href="#" class="hover:text-orange-500">About</a>
-            <a href="#" class="hover:text-orange-500">Contact</a>
-            <button class="flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-                <span class="ml-2">Cart</span>
-            </button>
-        </div>
-        <button class="md:hidden flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-            </svg>
-            <span class="ml-2">Cart</span>
-        </button>
     </nav>
 
     <!-- Hero Section -->
@@ -229,38 +276,52 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-100 py-12">
+    <footer class="bg-white py-16">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <img src="assets/logo.png" alt="Logo" class="h-8 mb-4">
-                    <p class="text-gray-600">Your trusted source for beautiful flowers and plants.</p>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                <!-- Logo and Description -->
+                <div class="md:col-span-3">
+                    <img src="assets/logo.png" alt="Fauget" class="h-8 mb-4">
+                    <p class="text-gray-500">Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
                 </div>
-                <div>
-                    <h3 class="font-semibold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-600 hover:text-orange-500">Home</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-orange-500">Plants</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-orange-500">About</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-orange-500">Contact</a></li>
-                    </ul>
+                
+                <!-- Navigation Links - First Column -->
+                <div class="md:col-span-2">
+                    <div class="space-y-4">
+                        <a href="#" class="block text-gray-600 hover:text-[#FF6B00] transition-colors">Home</a>
+                        <a href="#" class="block text-gray-600 hover:text-[#FF6B00] transition-colors">About Us</a>
+                        <a href="#" class="block text-gray-600 hover:text-[#FF6B00] transition-colors">Blog</a>
+                        <a href="#" class="block text-gray-600 hover:text-[#FF6B00] transition-colors">FAQ</a>
+                        <a href="#" class="block text-gray-600 hover:text-[#FF6B00] transition-colors">Contact Us</a>
+                    </div>
                 </div>
-                <div>
-                    <h3 class="font-semibold mb-4">Contact</h3>
-                    <ul class="space-y-2 text-gray-600">
-                        <li>123 Garden Street</li>
-                        <li>New York, NY 10001</li>
-                        <li>info@flowermarket.com</li>
-                        <li>(555) 123-4567</li>
-                    </ul>
+
+                <!-- Navigation Links - Second Column -->
+                <div class="md:col-span-2">
+                    <div class="space-y-4">
+                        <a href="#" class="block text-gray-600 hover:text-[#FF6B00] transition-colors">Features</a>
+                        <a href="#" class="block text-gray-600 hover:text-[#FF6B00] transition-colors">Pricing</a>
+                        <a href="#" class="block text-gray-600 hover:text-[#FF6B00] transition-colors">Privacy Policy</a>
+                        <a href="#" class="block text-gray-600 hover:text-[#FF6B00] transition-colors">Terms of Service</a>
+                        <a href="#" class="block text-gray-600 hover:text-[#FF6B00] transition-colors">Help Center</a>
+                    </div>
                 </div>
-                <div>
-                    <h3 class="font-semibold mb-4">Follow Us</h3>
+
+                <!-- Social Media Icons -->
+                <div class="md:col-span-5 md:flex md:justify-end">
                     <div class="flex space-x-4">
-                        <a href="#"><img src="assets/icon-facebook.png" alt="Facebook" class="h-6"></a>
-                        <a href="#"><img src="assets/icon-twitter.png" alt="Twitter" class="h-6"></a>
-                        <a href="#"><img src="assets/icon-linkedin.png" alt="LinkedIn" class="h-6"></a>
-                        <a href="#"><img src="assets/icon-youtube.png" alt="YouTube" class="h-6"></a>
+                        <a href="#" class="hover:opacity-80">
+                            <img src="assets/icon-linkedin.png" alt="LinkedIn" class="w-6 h-6">
+                        </a>
+                        <a href="#" class="hover:opacity-80">
+                            <img src="assets/icon-twitter.png" alt="X (Twitter)" class="w-6 h-6">
+                        </a>
+                        <a href="#" class="hover:opacity-80">
+                            <img src="assets/icon-facebook.png" alt="Facebook" class="w-6 h-6">
+                        </a>
+                        <a href="#" class="hover:opacity-80">
+                            <img src="assets/icon-youtube.png" alt="YouTube" class="w-6 h-6">
+                        </a>
                     </div>
                 </div>
             </div>
